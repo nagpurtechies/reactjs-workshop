@@ -1,55 +1,16 @@
 {
-  "name": "Lab01",
-  "version": "1.0.0",
-  "description": "ReactJS Workshop Lab 01",
-  "main": "index.js",
-  "scripts": {
-    "start": "npm-run-all --parallel dev lint:watch",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
-    "lint": "cross-env esw webpack.config.*  src",
-    "lint:watch": "npm run lint -- --watch",
-    "test": "mocha --reporter progress --require tools/testSetup.js \"src/**/*.test.js\"",
-    "test:watch": "npm run test -- --watch",
-    "build": "cross-env babel-node tools/build.js",
-    "postbuild": "babel-node tools/distServer.js"
-  },
-  "keywords": ["workshop", "hands-on", "reactjs", "webpack", "redux"],
-  "author": "Tushar Joshi",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.24.1",
-    "better-npm-run": "0.0.15",
-    "colors": "^1.1.2",
-    "cross-env": "^4.0.0",
-    "css-loader": "^0.28.0",
-    "eslint": "^3.19.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.10.3",
-    "eslint-watch": "^3.1.0",
-    "expect": "^1.20.2",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "html-webpack-plugin": "^2.28.0",
-    "jsdom": "^9.12.0",
-    "mocha": "^3.2.0",
-    "nock": "^9.0.13",
-    "npm-run-all": "^4.0.2",
-    "open": "0.0.5",
-    "rimraf": "^2.6.1",
-    "style-loader": "^0.16.1",
-    "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.2"
-  },
+  "name": "finish",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "babel-polyfill": "^6.23.0",
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-hot-loader": "^3.0.0-beta.6"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
