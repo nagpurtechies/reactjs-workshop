@@ -76,6 +76,12 @@ module.exports = {
 };
 ```
 
+## Install enzyme and react-test-renderer
+
+```bash
+npm install --save-dev enzyme react-test-renderer
+```
+
 ## Configure WebdriverIO and Selenium
 
 ```bash
