@@ -62,7 +62,14 @@ User settings in VSCode can be found in:
 }
 ```
 
-## Required Node.js packages
+Ensure that you have cloned this repository 
+
+```bash
+git clone https://github.com/nagpurtechies/reactjs-workshop.git ReactJSWorkshop
+cd ReactJSWorkshop
+```
+
+The setup can be done by running the commands with the checked out pre-prepared files 
 
 ```bash
 npm install -g create-react-app
@@ -70,7 +77,8 @@ cd setup
 npm install
 npm run selenium-setup
 ```
-Check the settings by running following commands in separate terminals at same time
+
+To test the setup execute the following commands each one on a separate terminal.  All commands should run without errors to ensure the setup is as required.
 
 ```bash
 npm start
@@ -81,7 +89,7 @@ npm run e2e-tests
 
 ## Additional settings 
 
-## Admin Console
+## From Admin Console
 
 Installation for WebdriverIO package needs build tools to be available on the system.  If there is any error in the `npm install` command you may have to install the build tools as below:
 

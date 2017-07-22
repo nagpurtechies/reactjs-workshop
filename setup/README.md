@@ -1,5 +1,12 @@
 # Setup for ReactJS Workshop
 
+Ensure that you have cloned this repository 
+
+```bash
+git clone https://github.com/nagpurtechies/reactjs-workshop.git ReactJSWorkshop
+cd ReactJSWorkshop
+```
+
 The setup can be done by running the commands with the checked out pre-prepared files 
 
 ```bash
