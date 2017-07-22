@@ -1,54 +1,41 @@
 # Nagpur Techies ReactJS Workshop - lab02
 
-# Lab02 Notes
+Properties
 
-## Copying node_modules from other lab folder
-
-### On Windows
-
-Copy and paste the setup folder and rename it to a different name
-
-### On Mac and Linux
-
-React scripts uses symlinks hence command like
-
-```bash
-cp -r setup myproject
-```
-
-cp with -a option is needed for symlinks to copy correctly
-
-```bash
-cp -a setup myproject
-```
-
-## Different ways to create App component
-
-Class method
+## Properties in stateless function
 
 ```js
-class App extends React.Component {
-    render() {
-        return <h1>Hi</h1>
-    }
-}
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const App = ({ fullname, age }) => <h1>{fullname} is of {age}</h1>;
+
+App.propTypes = {
+  fullname: PropTypes.string,
+  age: PropTypes.number.isRequired,
+};
+
+App.defaultProps = {
+  fullname: 'John Doe',
+};
+
+export default App;
 ```
 
-Stateless function method
+## Passing values to properties
 
 ```js
-const App = () => {
-    return <h1>Hi</h1>
-}
+/* global document */
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './App';
+
+
+ReactDOM.render(
+  <App fullname="Rahul" age="25" />,
+  document.getElementById('root'),
+);
 ```
 
-Where return is defalt behaviour for last statement
-
-```js
-const App = () => (<h1>Hi</h1>)
-```
-
-## References
-
-1. https://www.peterbe.com/plog/public-class-fields
-1. http://reactkungfu.com/2015/07/why-and-how-to-bind-methods-in-your-react-component-classes/

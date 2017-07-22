@@ -1,35 +1,26 @@
 # Nagpur Techies ReactJS Workshop - lab01
 
-## Install Create React App globally
+First program, Hello World, Render function
+
+## Copying node_modules from other lab folder
+
+### On Windows
+
+Copy and paste the setup folder and rename it to a different name
+
+### On Mac and Linux
+
+React scripts uses symlinks hence command like
 
 ```bash
-npm i -g create-react-app
+cp -r setup myproject
 ```
+
+cp with -a option is needed for symlinks to copy correctly
 
 ```bash
-create-react-app react-app
+cp -a setup myproject
 ```
-
-## Start the application 
-
-```bash
-npm start
-```
-
-## Remove additional clutter
-
-To keep minimal code for learning remove the files listed below from the generated files.
-
-* src/App.test.js
-* src/App.css
-* src/index.css
-* src/logo.svg
-* public/favicon.ico
-* public/manifest.json
-
-The application will show errors in browser as well as terminal.
-
-Observe the changes in the terminal as we continue changing the files and saving them.
 
 ## Replace contents of the following files
 
@@ -79,3 +70,46 @@ ReactDOM.render(
 ## Observe reload behaviour
 
 * Change the contents of the files like title or h1 and see the reload happening in real time on the terminal as well as browser
+
+## Different ways to create App component
+
+Class method
+
+```js
+class App extends React.Component {
+    render() {
+        return <h1>Hi</h1>;
+    }
+}
+```
+
+Stateless function method
+
+```js
+const App = () => {
+    return <h1>Hi</h1>;
+}
+```
+
+Where return is defalt behaviour for last statement
+
+```js
+const App = () => (<h1>Hi</h1>);
+```
+
+## Render function can return only single JSX element
+
+Check by typing the following code in App.js
+
+```js
+class App extends React.Component {
+    render() {
+        return <h1>Hi</h1><p>Another content</p>;
+    }
+}
+```
+
+## References
+
+1. https://www.peterbe.com/plog/public-class-fields
+1. http://reactkungfu.com/2015/07/why-and-how-to-bind-methods-in-your-react-component-classes/
