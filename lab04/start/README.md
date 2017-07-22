@@ -4,7 +4,7 @@ Components and composition, passing props
 
 ## Add file `src/components/textField/index.js`
 
-``js
+```js
 import React from 'react';
 import PropTypes from 'prop-types';
 
