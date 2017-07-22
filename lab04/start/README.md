@@ -21,6 +21,12 @@ TextField.propTypes = {
 export default TextField;
 ```
 
+## In src/App.js import the component
+
+```js
+import TextField from './components/textField/';
+```
+
 ## In src/App.js change the render function from
 
 ```js
