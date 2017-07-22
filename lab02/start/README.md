@@ -4,16 +4,22 @@
 
 ## Copying node_modules from other lab folder
 
+### On Windows
+
+Copy and paste the setup folder and rename it to a different name
+
+### On Mac and Linux
+
 React scripts uses symlinks hence command like
 
 ```bash
-cp -r node_modules .
+cp -r setup myproject
 ```
 
-will not work. -a option is needed
+cp with -a option is needed for symlinks to copy correctly
 
 ```bash
-cp -a node_modules .
+cp -a setup myproject
 ```
 
 ## Different ways to create App component

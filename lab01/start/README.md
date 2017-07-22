@@ -16,7 +16,7 @@ create-react-app react-app
 npm start
 ```
 
-## Remove additional files
+## Remove additional clutter
 
 To keep minimal code for learning remove the files listed below from the generated files.
 
@@ -24,7 +24,6 @@ To keep minimal code for learning remove the files listed below from the generat
 * src/App.css
 * src/index.css
 * src/logo.svg
-* src/registerServiceWorker.js
 * public/favicon.ico
 * public/manifest.json
 

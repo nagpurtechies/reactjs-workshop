@@ -35,6 +35,17 @@ cd setup
 create-react-app .
 ```
 
+## Remove additional clutter
+
+To keep minimal code for learning remove the files listed below from the generated files.
+
+* src/App.test.js
+* src/App.css
+* src/index.css
+* src/logo.svg
+* public/favicon.ico
+* public/manifest.json
+
 ## ESLint configuration
 
 Install and configure ESlint
