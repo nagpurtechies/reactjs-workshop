@@ -38,12 +38,12 @@ node_modules/.bin/eslint —-init
 ```
 Provide the following answers to the questions
 
-  ? How would you like to configure ESLint? Use a popular style guide
-  ? Which style guide do you want to follow? Airbnb
-  ? Do you use React? Yes
-  ? What format do you want your config file to be in? JavaScript
+  - ? How would you like to configure ESLint? Use a popular style guide
+  - ? Which style guide do you want to follow? Airbnb
+  - ? Do you use React? Yes
+  - ? What format do you want your config file to be in? JavaScript
   Checking peerDependencies of eslint-config-airbnb@latest
-  ? The style guide "airbnb" requires eslint@^3.19.0. You are currently using eslint@4.3.0.
+  - ? The style guide "airbnb" requires eslint@^3.19.0. You are currently using eslint@4.3.0.
     Do you want to downgrade? Yes
 
 Add `.eslintrc.js` file with the following contents
@@ -72,15 +72,15 @@ node_modules/.bin/wdio config
 
 Provide the following answers to the questions
 
-  ? Where do you want to execute your tests? On my local machine
-  ? Which framework do you want to use? mocha
-  ? Shall I install the framework adapter for you? Yes
-  ? Where are your test specs located? ./e2etests/*.js
-  ? Which reporter do you want to use?
-  ? Do you want to add a service to your test setup?
-  ? Level of logging verbosity silent
-  ? In which directory should screenshots gets saved if a command fails? ./errorShots/
-  ? What is the base url? http://localhost
+  - ? Where do you want to execute your tests? On my local machine
+  - ? Which framework do you want to use? mocha
+  - ? Shall I install the framework adapter for you? Yes
+  - ? Where are your test specs located? ./e2etests/*.js
+  - ? Which reporter do you want to use?
+  - ? Do you want to add a service to your test setup?
+  - ? Level of logging verbosity silent
+  - ? In which directory should screenshots gets saved if a command fails? ./errorShots/
+  - ? What is the base url? http://localhost
 
 Add scripts to the `package.json` for selenium and webdriver
 
