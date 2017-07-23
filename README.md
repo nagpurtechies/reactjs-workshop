@@ -3,6 +3,8 @@
 This repository is the code used in the hands-on workshop for 
 ReactJS conducted at Nagpur Techies 23 July 2017 meetup.
 
+If you haven't already joined, please join our [Facebook group](https://www.facebook.com/groups/nagpurtechies/), [Slack team](https://nagpur-techies-slack.herokuapp.com/) and [Meetup group](https://www.meetup.com/Nagpur-Techies)
+
 ## Prerequisite Setup
 
 1. Node.js v8.2.1+
