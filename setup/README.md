@@ -118,7 +118,13 @@ Add scripts to the `package.json` for selenium and webdriver
 }
 ```
 
-The final `package.json` should look like below
+## Install Redux
+
+```bash
+npm install --save redux react-redux
+```
+
+## The final `package.json` should look like below
 
 ```json
 {
